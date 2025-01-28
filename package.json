@@ -1,5 +1,5 @@
 {
-  "name": "my-turborepo",
+  "name": "ihc-new",
   "private": true,
   "scripts": {
     "build": "turbo build",
