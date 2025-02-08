@@ -2,6 +2,21 @@
 
 @layer base {
   :root {
+
+
+    --brand-primary: #7A8D83;
+    --brand-primary-2: #B6965A;
+    --brand-primary-3: #85532B;
+    --brand-shade: #FFF5ED;
+    --primary-3: #F6F3ED;
+    --light: #FAFAFA;
+    --light-2: #F5F5F5;
+    --shade-1: #EFF6F2;
+
+
+
+
+
     --background: 0 0% 100%;
     --foreground: 222.2 47.4% 11.2%;
     --muted: 210 40% 96.1%;
@@ -52,7 +67,7 @@
     @reference border-border;
   }
   body {
-    @reference font-sans antialiased bg-background text-foreground;
+    @reference font-(--font-inter) antialiased bg-background text-foreground;
   }
 }
 

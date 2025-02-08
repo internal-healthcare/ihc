@@ -2,16 +2,26 @@ import type { Config } from "tailwindcss";
 import tailwindcssAnimate from "tailwindcss-animate";
 
 const config = {
-  darkMode: ["class", "[data-theme='dark']"],
+  darkMode: ["class", ""],
   content: [
     "./app/**/*.{ts,tsx}",
     "./components/**/*.{ts,tsx}",
     "./src/**/*.{ts,tsx}",
-    // "../../packages/ui/src/**/*.{ts,tsx}",
+    "../../packages/ui/src/**/*.{ts,tsx}",
   ],
   theme: {
     extend: {
       colors: {
+        brand: {
+          primary: "var(--brand-primary)",
+          primary2: "var(--brand-primary-2)",
+          primary3: "var(--brand-primary-3)",
+          shade: "var(--brand-shade)",
+        },
+        primary3: "var(--primary-3)",
+        light: "var(--light)",
+        light2: "var(--light-2)",
+        shade1: "var(--shade-1)",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
