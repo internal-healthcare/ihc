@@ -9,4 +9,4 @@ export default {
     "./components/**/*.{ts,tsx}",
     "./src/**/*.{ts,tsx}",
   ],
-} satisfies Config;
+} satisfies Pick<Config, "content" | "presets">;

@@ -1,11 +1,10 @@
-@import "tailwindcss";
-@source "../src/";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 
 @layer base {
   :root {
-
-
     --brand-primary: #7A8D83;
     --brand-primary-2: #B6965A;
     --brand-primary-3: #85532B;
@@ -65,10 +64,25 @@
 }
 
 @layer base {
-  /* * {
-    @reference border-border;
+  * {
+    @apply border-border;
   }
+
   body {
-    @reference font-(--font-inter) antialiased bg-background text-foreground;
-  } */
+    @apply antialiased font-inter;
+  }
+
+  @font-face {
+    font-family: 'ClashDisplay';
+    src: url('./fonts/ClashDisplay-Variable.woff2') format('woff2'),
+      url('./fonts/ClashDisplay-Variable.woff') format('woff'),
+      url('./fonts/ClashDisplay-Variable.ttf') format('truetype');
+    font-weight: 200 700;
+    font-display: swap;
+    font-style: normal;
+  }
+
+  .container {
+    @apply max-w-[90vh] mx-auto;
+  }
 }

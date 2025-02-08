@@ -1,7 +1,7 @@
 import type { Config } from "tailwindcss";
 
 const config = {
-  darkMode: ["class", ""],
+  darkMode: ["class"],
   theme: {
     extend: {
       colors: {
@@ -54,10 +54,14 @@ const config = {
         md: `calc(var(--radius) - 2px)`,
         sm: "calc(var(--radius) - 4px)",
       },
+      fontFamily: {
+        inter: "var(--font-inter)",
+        clash: ["ClashDisplay"],
+      },
     },
   },
   plugins: [],
   // plugins: [tailwindcssAnimate],
-} satisfies Config;
+} satisfies Omit<Config, "content">;
 
 export default config;
