@@ -82,7 +82,24 @@
     font-style: normal;
   }
 
+  @font-face {
+    font-family: 'Aeonik';
+    src: url('./fonts/Aeonik\ Pro\ Regular/Aeonik-Pro.woff2') format('woff2'),
+      url('./fonts/Aeonik\ Pro\ Regular/Aeonik-Pro.woff') format('woff'),
+      url('./fonts/Aeonik\ Pro\ Regular/Aeonik-Pro.ttf') format('truetype'),
+      url('./fonts/Aeonik\ Pro\ Regular/Aeonik-Pro-Bold.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Aeonik';
+    src: url('./fonts/Aeonik\ Pro\ Regular/Aeonik-Pro-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: bold;
+  }
+
   .container {
-    @apply max-w-[90vh] mx-auto;
+    @apply max-w-[90vh] mx-auto px-4;
   }
 }

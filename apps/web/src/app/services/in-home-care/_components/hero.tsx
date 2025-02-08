@@ -30,7 +30,7 @@ export default function Hero() {
             <Image
               src="/images/hero-1.png"
               width={657} height={548}
-              className="object-cover rounded-[60px] mx-auto "
+              className="object-cover rounded-[30px] md:rounded-[60px] mx-auto "
               alt="in-home care"
             />
           </div>
