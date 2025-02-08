@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@source "../src/";
+
 
 @layer base {
   :root {
@@ -63,13 +65,10 @@
 }
 
 @layer base {
-  * {
+  /* * {
     @reference border-border;
   }
   body {
     @reference font-(--font-inter) antialiased bg-background text-foreground;
-  }
+  } */
 }
-
-
-

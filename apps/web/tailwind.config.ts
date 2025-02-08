@@ -1,8 +1,12 @@
 import type { Config } from "tailwindcss";
 import mainConfig from "@repo/ui/tailwind.config";
 
-const config = {
+export default {
   ...mainConfig,
+  content: [
+    "../../packages/ui/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+  ],
 } satisfies Config;
-
-export default config;

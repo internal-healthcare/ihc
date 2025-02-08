@@ -1,3 +1,3 @@
 export default function MainNav() {
-  return <div className="bg-red-500 text-xl text-blue-500 test">MainNav</div>;
+  return <div className="text-2xl text-yellow-500 font-bold">MainNav</div>;
 }
