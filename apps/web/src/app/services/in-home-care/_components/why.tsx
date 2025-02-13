@@ -10,42 +10,42 @@ const list = [
     title: "Personalized and Tailored Care",
     border: "#7A8D83",
     mainBg: "#B6965A",
-    checkBg: "#6D5A36",
+    checkBg: "#7A8D83",
     end: "Ellipse.svg",
   },
   {
     title: "Comfort and Familiarity of Home",
     border: "#999896",
     mainBg: "#FFFDFA",
-    checkBg: "#6D5A36",
+    checkBg: "#999897",
     end: "Star-1.svg",
   },
   {
     title: "100% Independence",
     border: "#4A5450",
     mainBg: "#7A8D83",
-    checkBg: "#6D5A36",
+    checkBg: "#4A5450",
     end: "Ellipse.svg",
   },
   {
     title: "One-on-One Attention",
     border: "#999897",
     mainBg: "#FFFDFA",
-    checkBg: "#6D5A36",
+    checkBg: "#999897",
     end: "Star-1.svg",
   },
   {
     title: "Family Involvement & Peace",
     border: "#4A5450",
     mainBg: "#7A8D83",
-    checkBg: "#6D5A36",
+    checkBg: "#4A5450",
     end: "Star-2.svg",
   },
   {
     title: "Cost-Effective Care Option",
     border: "#7A8D83",
     mainBg: "#B6965A",
-    checkBg: "#6D5A36",
+    checkBg: "#7A8D83",
     end: "Ellipse.svg",
   },
 ];
@@ -91,12 +91,13 @@ type ClipProps = {
 function Clip({ mainBg, title, end, checkBg }: ClipProps) {
   const color = mainBg == "#FFFDFA" ? "bg-white" : `bg-[${mainBg}]`;
   const textColor = mainBg == "#FFFDFA" ? "text-black" : "text-white";
+  const checkColor = ["#999897"].includes(checkBg) ? "bg-black/60": `bg-[${checkBg}]`
   return (
     <div className={cn(color, "rounded-[34px] p-2 flex items-center gap-4 justify-between border")}>
       <div
         className={cn(
-          `bg-[${checkBg}]`,
-          "w-6 h-6 border-2 border-black grid justify-center items-center rounded-sm ml-5"
+          checkColor,
+          "w-6 h-6 border-[1.5px] border-black grid justify-center items-center rounded-sm ml-5"
         )}
       >
         <CheckIcon className="w-4 h-4 stroke-[3] text-white" />

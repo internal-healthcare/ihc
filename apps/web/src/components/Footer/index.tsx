@@ -137,7 +137,7 @@ export default function index() {
             </div>
             <div
               className={cn(
-                "grid gap-8 grid-cols-1 md:grid-cols-2",
+                "grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-5",
                 `lg:grid-cols-${footerLinks.length}`
               )}
             >
