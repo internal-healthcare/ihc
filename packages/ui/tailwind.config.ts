@@ -57,7 +57,8 @@ const config = {
       fontFamily: {
         inter: "var(--font-inter)",
         clash: ["ClashDisplay"],
-        aeonik: ["Aeonik"]
+        aeonik: ["Aeonik"],
+        poppins: ["Poppins"],
       },
     },
   },

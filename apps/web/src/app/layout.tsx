@@ -4,6 +4,7 @@ import "@repo/ui/globals.css";
 import { cn } from "@repo/ui/lib/utils";
 import { inter } from "./fonts";
 import MainNav from "@/components/MainNav";
+import Footer from "@/components/Footer"
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -20,6 +21,7 @@ export default function RootLayout({
       <body className={cn(inter.variable)}>
         <MainNav />
         <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );

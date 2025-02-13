@@ -99,6 +99,13 @@
     font-style: bold;
   }
 
+  @font-face {
+    font-family: 'Poppins';
+    src: url('./fonts/Poppins/Poppins-Bold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: bold;
+  }
+
   .container {
     @apply max-w-[90vh] mx-auto px-4;
   }
