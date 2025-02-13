@@ -6,7 +6,7 @@
     --maincolor: var(--bg);
 }
 
-.content {
+/* .content {
     --stripes: repeating-linear-gradient(60deg,
             #fff 0%,
             #fff 7%,
@@ -22,4 +22,4 @@
             #60a5fa 30%);
     background-image: radial-gradient(circle, rgb(49, 144, 228) 0%, rgb(29, 84, 166) 100%);
     background-image: var(--stripes);
-}
+} */

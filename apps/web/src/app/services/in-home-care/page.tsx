@@ -4,6 +4,7 @@ import Services from "./_components/services";
 import Why from "./_components/why";
 import Works from "./_components/works";
 import ChooseUs from "./_components/choose";
+import Connect from "./_components/connect";
 
 export default function page() {
   return (
@@ -12,6 +13,7 @@ export default function page() {
       <Services />
       <Why />
       <Works />
+      <Connect />
       <ChooseUs />
     </>
   );

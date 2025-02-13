@@ -68,8 +68,8 @@ const footerLinks: FooterLinks = [
     title: "Get the caregiver app",
     type: "images",
     links: [
-      { title: "App Store", href: "/images/app-store.png", className:"object-contain" },
-      { title: "Play Store", href: "/images/play-store.png", className: "object-contain" },
+      { title: "App Store", href: "/icons/app-store.svg", className: "object-contain" },
+      { title: "Play Store", href: "/icons/play-store.svg", className: "object-contain" },
     ],
   },
 ];
@@ -119,8 +119,8 @@ export default function index() {
           </div>
         </div>
         <div>
-          <div className={cn("grid gap-8 grid-cols-1", `lg:grid-cols-${footerLinks.length + 1}`)}>
-            <div className="text-left space-y-[2.5rem]">
+          <div className={cn("flex gap-4 flex-wrap lg:flex-nowrap")}>
+            <div className="text-left space-y-[2.5rem] max-w-[250px]">
               <div className="flex items-center gap-2">
                 <Image
                   src="/images/logo.png"
@@ -135,28 +135,43 @@ export default function index() {
                 Your trusted resource for connecting with top-quality senior care providers
               </p>
             </div>
-            {footerLinks.map((l1, i1) => (
-              <div key={i1} className="text-left space-y-[1.125rem]">
-                <p className="font-bold text-white/[0.88]">{l1.title}</p>
-                <ul className="relative space-y-[1.125rem]">
-                  {l1.links.map((l2, index) => (
-                    <li key={index} className="relative text-left">
-                      {l1.type == "links" ? (
-                        l2.href ? (
-                          <Link className={cn("text-[#BFBFBF]", l2.className)} href={l2.href}>{l2.title}</Link>
-                        ) : (
-                          <p className={cn("text-[#BFBFBF]", l2.className)}>{l2.title}</p>
-                        )
-                      ) : l1.type == "images" ? (
-                        l2.href ? (
-                          <Image src={l2.href} alt={l2.title} width={135} height={40} className={cn(l2.className)} />
-                        ) : null
-                      ) : null}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
+            <div
+              className={cn(
+                "grid gap-8 grid-cols-1 md:grid-cols-2",
+                `lg:grid-cols-${footerLinks.length}`
+              )}
+            >
+              {footerLinks.map((l1, i1) => (
+                <div key={i1} className="text-left space-y-[1.125rem] min-w-[200px]">
+                  <p className="font-bold text-white/[0.88]">{l1.title}</p>
+                  <ul className="relative space-y-[1.125rem]">
+                    {l1.links.map((l2, index) => (
+                      <li key={index} className="relative text-left">
+                        {l1.type == "links" ? (
+                          l2.href ? (
+                            <Link className={cn("text-[#BFBFBF]", l2.className)} href={l2.href}>
+                              {l2.title}
+                            </Link>
+                          ) : (
+                            <p className={cn("text-[#BFBFBF]", l2.className)}>{l2.title}</p>
+                          )
+                        ) : l1.type == "images" ? (
+                          l2.href ? (
+                            <Image
+                              src={l2.href}
+                              alt={l2.title}
+                              width={135}
+                              height={40}
+                              className={cn(l2.className)}
+                            />
+                          ) : null
+                        ) : null}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
