@@ -32,12 +32,16 @@ const blogs: BlogProps[] = [
   },
 ];
 
-export default function Information() {
+type Props = {
+  heading: string;
+};
+
+export default function Information({ heading }: Props) {
   return (
     <div className="py-[5rem] pb-[10rem]">
       <div className="container space-y-[5rem]">
         <div className="text-center space-y-[2rem]">
-          <CBadge>IN-HOME CARE RESOURCES</CBadge>
+          <CBadge>{heading}</CBadge>
           <h4 className="text-[5rem] leading-[5.1rem] text-black font-clash font-medium text-center">
             Information Center and <span className="text-[#7A8D83] block">Helpful Guides</span>
           </h4>

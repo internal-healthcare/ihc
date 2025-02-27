@@ -99,6 +99,7 @@
     font-style: bold;
   }
 
+
   @font-face {
     font-family: 'Poppins';
     src: url('./fonts/Poppins/Poppins-Bold.ttf') format('truetype');

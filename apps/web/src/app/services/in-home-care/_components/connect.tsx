@@ -3,12 +3,16 @@ import { Input } from "@repo/ui/components/ui/input";
 import Image from "next/image";
 import React from "react";
 
-export default function Connect() {
+type Props = {
+  title: string;
+};
+
+export default function Connect({ title }: Props) {
   return (
     <div className="py-[5rem]">
       <div className="container bg-black rounded-[90px] text-white p-[8.5rem] space-y-[4.813rem]">
         <h4 className="font-clash font-medium text-[3.938rem] text-center md:max-w-5xl mx-auto md:leading-[4.843rem] ">
-          Connect with the perfect caregiver for in-home care services today
+          {title}
         </h4>
         <div className="grid grid-cols-2 gap-8">
           <div className="bg-white/[0.14] rounded-[36px] overflow-hidden">
@@ -44,7 +48,7 @@ export default function Connect() {
                 </p>
               </div>
               <div className="mt-[1.688rem]">
-                <div className="flex items-center">
+                <div className="flex items-center gap-2">
                   <Input
                     className="border border-white/[0.76] rounded-[100px] h-[50px]"
                     placeholder="Enter your number"

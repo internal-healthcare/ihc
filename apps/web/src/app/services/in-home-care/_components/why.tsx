@@ -56,7 +56,9 @@ export default function Why() {
       <div className="container bg-black rounded-[37px]">
         <div className={cn(styles.content, "grid grid-cols-2 items-center")}>
           <div className="text-white p-[7.5rem] space-y-[1.125rem]">
-            <h3 className="font-clash text-[3.125rem] leading-[3.844rem] font-medium">We offer the best <span className="text-[#B6965A]">In-home care</span> Services</h3>
+            <h3 className="font-clash text-[3.125rem] leading-[3.844rem] font-medium">
+              We offer the best <span className="text-[#B6965A]">In-home care</span> Services
+            </h3>
             <p className="text-white text-lg">
               A compassionate and customizable approach to caregiving, allowing seniors to receive
               the help they need without sacrificing their independence or comfort.
@@ -88,10 +90,11 @@ type ClipProps = {
   border: string;
   checkBg: string;
 };
+
 function Clip({ mainBg, title, end, checkBg }: ClipProps) {
   const color = mainBg == "#FFFDFA" ? "bg-white" : `bg-[${mainBg}]`;
   const textColor = mainBg == "#FFFDFA" ? "text-black" : "text-white";
-  const checkColor = ["#999897"].includes(checkBg) ? "bg-black/60": `bg-[${checkBg}]`
+  const checkColor = ["#999897"].includes(checkBg) ? "bg-black/60" : `bg-[${checkBg}]`;
   return (
     <div className={cn(color, "rounded-[34px] p-2 flex items-center gap-4 justify-between border")}>
       <div
