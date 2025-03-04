@@ -37,14 +37,14 @@ export default function Services({ list, heading, title, title2, description }: 
   );
 }
 
-function InfoCard({ icon, title, desc }: { title: string; desc: string; icon: React.ReactNode }) {
+export function InfoCard({ icon, title, desc }: { title: string; desc: string; icon: React.ReactNode }) {
   return (
     <div className="bg-white border border-[#D9D9D9] rounded-[22px] p-[2.5rem] w-full md:max-w-[470px] space-y-[2rem]">
       <div className="bg-[#FAFAFA] border border-[#E3E3E3] rounded-full w-[56px] h-[56px] grid items-center justify-center">
         {icon}
       </div>
       <div className="space-y-[12px]">
-        <p className="text-[1.063rem] sm:text-[1.563rem] font-bold font-aeonik">{title}</p>
+        <p className="text-[1.063rem] sm:text-[1.563rem] font-bold font-aeonik leading-[1.781rem]">{title}</p>
         <p className="text-[0.794rem] sm:text-sm text-[#262626]">{desc}</p>
       </div>
     </div>

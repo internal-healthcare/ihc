@@ -5,7 +5,7 @@ export const inHomeCareServicesWeOffer = [
   {
     title: "Live-in/24 Hour Home Care",
     description: "24/7 assistance for seniors with monitoring, medical care, and companionship",
-    icon: <CarFrontIcon size={32} color="#262626" />,
+    icon: <Image src="/icons/247.svg" alt="Apartments" width={32} height={32} />,
   },
   {
     title: "Veterans Home Service",
