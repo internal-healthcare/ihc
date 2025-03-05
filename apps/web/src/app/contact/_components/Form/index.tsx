@@ -38,7 +38,6 @@ export default function ContactForm() {
                   />
                 </div>
               </div>
-
               <div>
                 <label htmlFor="email" className="block text-[#344054] mb-1.5">
                   Email
@@ -90,7 +89,6 @@ export default function ContactForm() {
                   className="w-full px-3.5 py-2.5 rounded-lg border border-[#D0D5DD] focus:outline-none focus:ring-2 focus:ring-[#D0D5DD]"
                 />
               </div>
-
               <button className="w-full bg-[#B08D57] text-white py-3 rounded-[1.664rem] hover:bg-[#B08D57]/90 transition-colors">
                 Send Message
               </button>
