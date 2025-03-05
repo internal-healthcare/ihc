@@ -73,11 +73,19 @@ export default function MainNav() {
               {links.map((l, index) =>
                 l.items && l.items.length > 0 ? (
                   <NavigationMenuItem key={index} className="relative w-full">
-                    <NavigationMenuTrigger>{l.title}</NavigationMenuTrigger>
+                    <NavigationMenuTrigger className="bg-transparent">
+                      {l.title}
+                    </NavigationMenuTrigger>
                     <NavigationMenuContent className="shadow-none overflow-hidden p-[28px] border-2 border-[#F0F0F0] bg-white shadow-transparent">
                       <div className="w-max max-w-[1300px] grid lg:grid-cols-3 gap-8">
                         {l.items.map((item, i) => (
-                          <div key={i} className={cn("border border-[#F0F0F0] rounded-[25px] p-[10px]", `bg-[${item.color}]`)}>
+                          <div
+                            key={i}
+                            className={cn(
+                              "border border-[#F0F0F0] rounded-[25px] p-[10px]",
+                              `bg-[${item.color}]`
+                            )}
+                          >
                             <NavigationMenuLink asChild>
                               <Link href={item.href} className="flex items-center gap-4">
                                 <div
