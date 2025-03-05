@@ -59,6 +59,7 @@ const config = {
         clash: ["ClashDisplay"],
         aeonik: ["Aeonik"],
         poppins: ["Poppins"],
+        cabinet: ["CabinetGrotesk-Variable"],
       },
     },
   },

@@ -14,7 +14,30 @@ import {
 import { cn } from "@repo/ui/lib/utils";
 
 const links = [
-  { title: "Company", href: "/" },
+  {
+    title: "Company",
+    href: "/",
+    items: [
+      {
+        title: "About Internal Healthcare Group",
+        href: "/about",
+        icon: "/icons/ix_about.svg",
+        iconColor: "#B6965A",
+        color: "#F6F3ED",
+        description:
+          "Learn about our mission, values, and dedication to delivering exceptional healthcare solutions.",
+      },
+      {
+        title: "Contact Us",
+        href: "/contact",
+        icon: "/icons/ep_phone.svg",
+        iconColor: "#141414",
+        color: "#F5F5F5",
+        description:
+          "Reach out for inquiries, support, or service information through various communication channels",
+      },
+    ],
+  },
   {
     title: "Services",
     href: "/services",
@@ -73,11 +96,11 @@ export default function MainNav() {
               {links.map((l, index) =>
                 l.items && l.items.length > 0 ? (
                   <NavigationMenuItem key={index} className="relative w-full">
-                    <NavigationMenuTrigger className="bg-transparent">
+                    <NavigationMenuTrigger className="bg-transparent text-[#475467] font-semibold focus:bg-transparent">
                       {l.title}
                     </NavigationMenuTrigger>
                     <NavigationMenuContent className="shadow-none overflow-hidden p-[28px] border-2 border-[#F0F0F0] bg-white shadow-transparent">
-                      <div className="w-max max-w-[1300px] grid lg:grid-cols-3 gap-8">
+                      <div className="w-max max-w-[1450px] grid lg:grid-cols-3 gap-8">
                         {l.items.map((item, i) => (
                           <div
                             key={i}

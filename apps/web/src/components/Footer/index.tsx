@@ -32,8 +32,8 @@ const footerLinks: FooterLinks = [
     type: "links",
     links: [
       { title: "In-home care", href: "/services/in-home-care" },
-      { title: "Assisted Living", href: "" },
-      { title: "Senior Care", href: "" },
+      { title: "Assisted Living", href: "/services/assisted-living" },
+      { title: "Senior Care", href: "/services/senior-day-care" },
       { title: "Senior Day Center", href: "" },
       { title: "Job Posting", href: "" },
       { title: "Senior Phone Companionship", href: "" },
@@ -61,7 +61,7 @@ const footerLinks: FooterLinks = [
       { title: "FAQs", href: "" },
       { title: "Privacy Policy", href: "" },
       { title: "Terms of Service", href: "" },
-      { title: "About Us", href: "" },
+      { title: "About Us", href: "/about" },
     ],
   },
   {
