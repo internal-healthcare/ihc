@@ -6,6 +6,7 @@ import { seniorDayCarechooseUs } from "../senior-day-care/data";
 import Connect from "../in-home-care/_components/connect";
 import Services from "./_components/services";
 import Benefits from "./_components/benefits";
+import Differences from "./_components/differences";
 
 export default function page() {
   return (
@@ -14,6 +15,7 @@ export default function page() {
       <Services />
       <Benefits />
       <Connect title="Connect with a care advocate  for assisted living" />
+      <Differences />
       <Information heading="Assisted Living Resources" />
       <ChooseUs
         title="We create a safe haven for your loved ones"
