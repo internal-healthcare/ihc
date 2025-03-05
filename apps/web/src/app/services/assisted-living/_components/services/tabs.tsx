@@ -29,28 +29,68 @@ const services = [
           title: "24/7 Care and Supervision",
           description:
             "Trained staff are available around the clock to ensure safety and well-being.",
-          icon: <Image src="/icons/247.svg" alt="Apartments" width={32} height={32} />,
+          icon: (
+            <Image
+              src="/icons/247.svg"
+              alt="Apartments"
+              width={32}
+              height={32}
+              style={{ width: "auto", height: "auto" }}
+            />
+          ),
         },
         {
           title: "Customizable Care Plans",
           description: "Services tailored to each resident’s unique needs and preferences.",
-          icon: <Image src="/icons/health-check.svg" alt="Care Plans" width={32} height={32} />,
+          icon: (
+            <Image
+              src="/icons/health-check.svg"
+              alt="Care Plans"
+              width={32}
+              height={32}
+              style={{ width: "auto", height: "auto" }}
+            />
+          ),
         },
         {
           title: "Engaging Activities",
           description:
             "Social, recreational, and wellness programs designed to promote an active lifestyle.",
-          icon: <Image src="/icons/recreation.svg" alt="Activities" width={32} height={32} />,
+          icon: (
+            <Image
+              src="/icons/recreation.svg"
+              alt="Activities"
+              width={32}
+              height={32}
+              style={{ width: "auto", height: "auto" }}
+            />
+          ),
         },
         {
           title: "Private or Shared Apartments",
           description: "Comfortable living spaces with housekeeping and laundry services included.",
-          icon: <Image src="/icons/home-smile-02.svg" alt="Apartments" width={32} height={32} />,
+          icon: (
+            <Image
+              src="/icons/home-smile-02.svg"
+              alt="Apartments"
+              width={32}
+              height={32}
+              style={{ width: "auto", height: "auto" }}
+            />
+          ),
         },
         {
           title: "Nutritious Meals",
           description: "Chef-prepared, dietitian-approved meals served in a community dining area.",
-          icon: <Image src="/icons/meal.svg" alt="Meal Preparation" width={32} height={32} />,
+          icon: (
+            <Image
+              src="/icons/meal.svg"
+              alt="Meal Preparation"
+              width={32}
+              height={32}
+              style={{ width: "auto", height: "auto" }}
+            />
+          ),
         },
         {
           title: "Transportation Services",
@@ -62,6 +102,7 @@ const services = [
               alt="Transportation Services"
               width={32}
               height={32}
+              style={{ width: "auto", height: "auto" }}
             />
           ),
         },
@@ -91,6 +132,7 @@ const services = [
               alt="Convenient Living Spaces"
               width={32}
               height={32}
+              style={{ width: "auto", height: "auto" }}
             />
           ),
         },
@@ -103,6 +145,7 @@ const services = [
               alt="No Chores or Maintenance"
               width={32}
               height={32}
+              style={{ width: "auto", height: "auto" }}
             />
           ),
         },
@@ -119,14 +162,26 @@ const services = [
           description:
             "Access to fitness centers, walking trails, and wellness programs to support a healthy lifestyle.",
           icon: (
-            <Image src="/icons/personal-care.svg" alt="Wellness Amenities" width={32} height={32} />
+            <Image
+              src="/icons/personal-care.svg"
+              alt="Wellness Amenities"
+              width={32}
+              height={32}
+              style={{ width: "auto", height: "auto" }}
+            />
           ),
         },
         {
           title: "Flexible Dining Options",
           description: "Restaurant-style dining with customizable meal plans.",
           icon: (
-            <Image src="/icons/meal.svg" alt="Flexible Dining Options" width={32} height={32} />
+            <Image
+              src="/icons/meal.svg"
+              alt="Flexible Dining Options"
+              width={32}
+              height={32}
+              style={{ width: "auto", height: "auto" }}
+            />
           ),
         },
         {
@@ -138,6 +193,7 @@ const services = [
               alt="On-Site Concierge Services"
               width={32}
               height={32}
+              style={{ width: "auto", height: "auto" }}
             />
           ),
         },
@@ -167,6 +223,7 @@ const services = [
               alt="Expertly Trained Staff"
               width={32}
               height={32}
+              style={{ width: "auto", height: "auto" }}
             />
           ),
         },
@@ -174,7 +231,13 @@ const services = [
           title: "Secure Environment",
           description: "Features like secured entrances and monitored spaces to prevent wandering.",
           icon: (
-            <Image src="/icons/building-07.svg" alt="Secure Environment" width={32} height={32} />
+            <Image
+              src="/icons/building-07.svg"
+              alt="Secure Environment"
+              width={32}
+              height={32}
+              style={{ width: "auto", height: "auto" }}
+            />
           ),
         },
         {
@@ -187,6 +250,7 @@ const services = [
               alt="Cognitive Enrichment Programs"
               width={32}
               height={32}
+              style={{ width: "auto", height: "auto" }}
             />
           ),
         },
@@ -199,6 +263,7 @@ const services = [
               alt="Individualized Care Plans"
               width={32}
               height={32}
+              style={{ width: "auto", height: "auto" }}
             />
           ),
         },
@@ -212,6 +277,7 @@ const services = [
               alt="24/7 Monitoring and Assistance"
               width={32}
               height={32}
+              style={{ width: "auto", height: "auto" }}
             />
           ),
         },
@@ -219,7 +285,15 @@ const services = [
           title: "Family Support",
           description:
             "Education and resources to help families navigate the challenges of memory loss.",
-          icon: <Image src="/icons/Users_Group.svg" alt="Family Support" width={32} height={32} />,
+          icon: (
+            <Image
+              src="/icons/Users_Group.svg"
+              alt="Family Support"
+              width={32}
+              height={32}
+              style={{ width: "auto", height: "auto" }}
+            />
+          ),
         },
       ],
     },
@@ -242,36 +316,82 @@ const services = [
           title: "Age-Friendly Design",
           description:
             "Apartments with features like grab bars, step-free showers, and accessible layouts.",
-          icon: <Image src="/icons/building-06.svg" alt="Age-Friendly Design" width={32} height={32} />,
+          icon: (
+            <Image
+              src="/icons/building-06.svg"
+              alt="Age-Friendly Design"
+              width={32}
+              height={32}
+              style={{ width: "auto", height: "auto" }}
+            />
+          ),
         },
         {
           title: "Affordable Rent Options",
           description: "Subsidized or market-rate options to fit various budgets.",
-          icon: <Image src="/icons/currency-dollar-circle.svg" alt="Affordable Rent Options" width={32} height={32} />,
+          icon: (
+            <Image
+              src="/icons/currency-dollar-circle.svg"
+              alt="Affordable Rent Options"
+              width={32}
+              height={32}
+              style={{ width: "auto", height: "auto" }}
+            />
+          ),
         },
         {
           title: "Community Amenities",
           description:
             "Shared spaces like libraries, community rooms, and gardens for social engagement.",
-          icon: <Image src="/icons/book-open-02.svg" alt="Activities" width={32} height={32} />,
+          icon: (
+            <Image
+              src="/icons/book-open-02.svg"
+              alt="Activities"
+              width={32}
+              height={32}
+              style={{ width: "auto", height: "auto" }}
+            />
+          ),
         },
         {
           title: "Proximity to Services",
           description: "Convenient access to shopping, healthcare, and public transportation.",
-          icon: <Image src="/icons/gift-02.svg" alt="Proximity to Services" width={32} height={32} />,
+          icon: (
+            <Image
+              src="/icons/gift-02.svg"
+              alt="Proximity to Services"
+              width={32}
+              height={32}
+              style={{ width: "auto", height: "auto" }}
+            />
+          ),
         },
         {
           title: "Recreational Activities",
           description:
             "Organized events, fitness classes, and hobby groups to promote an active lifestyle.",
-          icon: <Image src="/icons/recreation.svg" alt="Recreational Activities" width={32} height={32} />,
+          icon: (
+            <Image
+              src="/icons/recreation.svg"
+              alt="Recreational Activities"
+              width={32}
+              height={32}
+              style={{ width: "auto", height: "auto" }}
+            />
+          ),
         },
         {
           title: "On-Site Assistance",
           description:
             "Staff available for maintenance, security, and general support to enhance peace of mind.",
           icon: (
-            <Image src="/icons/Moving_Desk.svg" alt="On-Site Assistance" width={32} height={32} />
+            <Image
+              src="/icons/Moving_Desk.svg"
+              alt="On-Site Assistance"
+              width={32}
+              height={32}
+              style={{ width: "auto", height: "auto" }}
+            />
           ),
         },
       ],
@@ -292,7 +412,7 @@ export default function ServiceTabs({}: Props) {
                   key={index}
                   className="data-[state=active]:bg-[#F0F0F0] rounded-[500px] h-[4.375rem] text-[1.25rem] font-semibold py-4 px-8 flex items-center gap-4 shadow-none"
                 >
-                  <Image width={24} height={24} src={service.icon} alt={service.title} />
+                  <Image width={24} height={24} src={service.icon} alt={service.title} style={{ width: "auto", height: "auto" }} />
                   {service.title}
                 </TabsTrigger>
               ))}

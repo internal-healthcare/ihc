@@ -10,12 +10,17 @@ type Props = {
 export default function Connect({ title }: Props) {
   return (
     <div className="py-[5rem]">
-      <div className="container bg-black rounded-[90px] text-white p-[8.5rem] space-y-[4.813rem]">
-        <h4 className="font-clash font-medium text-[3.938rem] text-center md:max-w-5xl mx-auto md:leading-[4.843rem] ">
+      <div className="relative">
+        <div className="green-morphe left-[35%] w-[300px] h-[300px]"></div>
+        <div className="yellow-morphe left-[45%] w-[300px] h-[300px]"></div>
+      </div>
+      <div className="container bg-black rounded-[90px] text-white p-[8.5rem] space-y-[4.813rem] overflow-hidden">
+        <h4 className="font-clash font-medium text-[3.938rem] text-center md:max-w-5xl mx-auto md:leading-[4.843rem] -mt-[2%]">
           {title}
         </h4>
         <div className="grid grid-cols-2 gap-8">
-          <div className="bg-white/[0.14] rounded-[36px] overflow-hidden">
+          <div className="bg-white/[0.14] rounded-[36px] overflow-hidden relative">
+            <div className="green-morphe -left-[10%] -top-[25%]"></div>
             <div className="px-[2rem] pt-[4rem]">
               <div>
                 <p className="text-[2rem] font-semibold leading-[2.475rem]">
@@ -32,11 +37,19 @@ export default function Connect({ title }: Props) {
             </div>
             <div className="h-[138px] relative">
               <div className="absolute right-0 -bottom-10">
-                <Image src="/icons/marketing-filling-survey.svg" width={129} height={138} alt="" />
+                <div className="yellow-morphe -left-[10%] -top-[25%]"></div>
               </div>
             </div>
           </div>
-          <div className="bg-white/[0.14] rounded-[36px] overflow-hidden">
+          <div className="bg-white/[0.14] rounded-[36px] overflow-hidden relative">
+            <Image
+              src="/shades/morphYellow.svg"
+              alt=""
+              width={300}
+              height={300}
+              className="absolute top-0 left-0"
+              style={{ width: "auto", height: "auto" }}
+            />
             <div className="px-[2rem] pt-[4rem]">
               <div>
                 <p className="text-[2rem] font-semibold leading-[2.475rem]">
@@ -63,6 +76,7 @@ export default function Connect({ title }: Props) {
                     width={146}
                     height={146}
                     alt=""
+                    style={{ width: "auto", height: "auto" }}
                   />
                 </div>
               </div>

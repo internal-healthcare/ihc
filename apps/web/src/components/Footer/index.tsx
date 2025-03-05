@@ -77,6 +77,11 @@ const footerLinks: FooterLinks = [
 export default function index() {
   return (
     <div className="py-[5rem] bg-black">
+      <div className="relative">
+        <div className="green-morphe left-[30%] -top-[30px]"></div>
+        <div className="yellow-morphe left-[60%] -top-[30px]"></div>
+      </div>
+
       <div className="text-center container text-white space-y-[8rem]">
         <div className="px-[4rem] space-y-6">
           <CBadge>Get Started</CBadge>

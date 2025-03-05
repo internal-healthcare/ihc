@@ -110,6 +110,47 @@
   .container {
     @apply max-w-[90vh] mx-auto px-4;
   }
+
+  .green-morphe {
+    /* div.HomeHeroBack_morphYellow__CT8KJ */
+    position: absolute;
+    width: 336.28px;
+    height: 336.28px;
+    left: 451px;
+    top: -15px;
+    background: #B6965A;
+    opacity: 0.27;
+    filter: blur(48.0401px);
+    border-radius: 336.281px;
+
+
+  }
+
+  .yellow-morphe {
+    /* div.HomeHeroBack_morphYellow__CT8KJ */
+    position: absolute;
+    width: 336.28px;
+    height: 336.28px;
+    left: 591px;
+    top: -15px;
+    background: #7A8D83;
+    opacity: 0.27;
+    filter: blur(48.0401px);
+    border-radius: 336.281px;
+
+  }
+
+  .img-shade {
+    /* image */
+    position: absolute;
+    width: 505px;
+    height: 727px;
+    left: 505px;
+    top: 0px;
+    background: url(/shades/img-shade.svg);
+    opacity: 0.58;
+
+  }
 }
 
 
@@ -118,6 +159,7 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }

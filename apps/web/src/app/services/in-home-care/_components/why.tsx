@@ -55,15 +55,20 @@ export default function Why() {
     <div className="py-[5rem]">
       <div className="container bg-black rounded-[37px]">
         <div className={cn(styles.content, "grid grid-cols-2 items-center")}>
-          <div className="text-white p-[7.5rem] space-y-[1.125rem]">
-            <h3 className="font-clash text-[3.125rem] leading-[3.844rem] font-medium">
-              We offer the best <span className="text-[#B6965A]">In-home care</span> Services
-            </h3>
-            <p className="text-white text-lg">
-              A compassionate and customizable approach to caregiving, allowing seniors to receive
-              the help they need without sacrificing their independence or comfort.
-            </p>
-            <Button className="bg-white text-[#7A8D83]">Get Started</Button>
+          <div className="">
+            <div className="relative">
+              <div className="img-shade -left-[20px] -top-[100px]"></div>
+            </div>
+            <div className="text-white p-[7.5rem] space-y-[1.125rem]">
+              <h3 className="font-clash text-[3.125rem] leading-[3.844rem] font-medium">
+                We offer the best <span className="text-[#B6965A]">In-home care</span> Services
+              </h3>
+              <p className="text-white text-lg">
+                A compassionate and customizable approach to caregiving, allowing seniors to receive
+                the help they need without sacrificing their independence or comfort.
+              </p>
+              <Button className="bg-white text-[#7A8D83]">Get Started</Button>
+            </div>
           </div>
           <div className="bg-[#141414] border border-black rounded-[37px] p-[7.5rem] space-y-[1.25rem]">
             {list.map((clip, index) => (
