@@ -3,6 +3,8 @@
   "compilerOptions": {
     "outDir": "dist",
     "baseUrl": ".",
+    "moduleResolution": "bundler",
+    "module": "Preserve",
     "paths": {
       "@/*": ["./src/*"]
     }

@@ -6,7 +6,7 @@ import ContactForm from "./_components/Form";
 export default function page() {
   return (
     <>
-      <Hero />
+      <Hero />  
       <Contact />
       <ContactForm />
     </>

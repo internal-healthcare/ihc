@@ -1,6 +1,5 @@
 import { Button } from "@repo/ui/components/ui/button";
 import React from "react";
-import styles from "./why.module.css";
 import { cn } from "@repo/ui/lib/utils";
 import { CheckIcon } from "lucide-react";
 import Image from "next/image";
@@ -54,7 +53,7 @@ export default function Why() {
   return (
     <div className="py-[5rem]">
       <div className="container bg-black rounded-[37px]">
-        <div className={cn(styles.content, "grid grid-cols-2 items-center")}>
+        <div className={cn("grid grid-cols-2 items-center")}>
           <div className="">
             <div className="relative">
               <div className="img-shade -left-[20px] -top-[100px]"></div>
