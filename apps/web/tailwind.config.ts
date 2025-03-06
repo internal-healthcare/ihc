@@ -9,4 +9,7 @@ export default {
     "./components/**/*.{ts,tsx}",
     "./src/**/*.{ts,tsx}",
   ],
-} satisfies Pick<Config, "content" | "presets">;
+  // corePlugins: {
+  //   preflight: false, // Try disabling preflight temporarily to isolate the issue
+  // },
+} satisfies Pick<Config, "content" | "presets" | "corePlugins">;
