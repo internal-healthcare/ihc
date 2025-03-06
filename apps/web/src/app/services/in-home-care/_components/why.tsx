@@ -4,6 +4,7 @@ import { cn } from "@repo/ui/lib/utils";
 import { CheckIcon } from "lucide-react";
 import Image from "next/image";
 
+
 const list = [
   {
     title: "Personalized and Tailored Care",
