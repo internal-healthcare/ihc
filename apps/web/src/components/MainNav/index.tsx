@@ -96,7 +96,7 @@ export default function MainNav() {
               {links.map((l, index) =>
                 l.items && l.items.length > 0 ? (
                   <NavigationMenuItem key={index} className="relative w-full">
-                    <NavigationMenuTrigger className="bg-transparent text-[#475467] font-semibold focus:bg-transparent">
+                    <NavigationMenuTrigger className="bg-transparent text-[#475467] font-normal text-[1rem] focus:bg-transparent">
                       {l.title}
                     </NavigationMenuTrigger>
                     <NavigationMenuContent className="shadow-none overflow-hidden p-[28px] border-2 border-[#F0F0F0] bg-white shadow-transparent">
@@ -147,7 +147,7 @@ export default function MainNav() {
                       <NavigationMenuLink
                         className={cn(
                           navigationMenuTriggerStyle(),
-                          "text-[#475467] font-semibold focus:bg-transparent bg-transparent"
+                          "text-[#475467] font-normal focus:bg-transparent bg-transparent text-[1rem]" 
                         )}
                       >
                         {l.title}

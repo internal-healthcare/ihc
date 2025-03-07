@@ -85,7 +85,7 @@ function InfoCard({ icon, title, desc, color, border, style }: InfoCardProps) {
           {title}
         </p>
         <p
-          className={cn(
+          className={cn("text-[1.125rem]",
             { "text-[#FFFDFA]": style == "style2" },
             { "text-[#475467]": style == "style1" }
           )}

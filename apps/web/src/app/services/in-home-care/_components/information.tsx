@@ -122,7 +122,7 @@ function Blog(props: BlogProps) {
           <p className="font-semibold text-xl overflow-ellipsis max-w-[80%]">{props.title}</p>
           <ArrowUpRight className="w-6 h-6 stroke-2" />
         </div>
-        <p>{props.description}</p>
+        <p className="text-[1rem]">{props.description}</p>
         <div className="flex items-center gap-2">
           {props.categories.map((cat, index) => (
             <div

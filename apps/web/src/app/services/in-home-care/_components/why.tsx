@@ -52,12 +52,12 @@ const list = [
 
 export default function Why() {
   return (
-    <div className="py-[5rem]">
-      <div className="container bg-black rounded-[37px]">
-        <div className={cn("grid grid-cols-2 items-center")}>
+    <div className="py-[5rem] px-4">
+      <div className="container bg-black rounded-[37px] overflow-hidden px-0">
+        <div className={cn("grid grid-cols-2 items-center ")}>
           <div className="">
             <div className="relative">
-              <div className="img-shade -left-[20px] -top-[100px]"></div>
+              <div className="img-shade -left-[20px] bottom-0 w-full bg-no-repeat"></div>
             </div>
             <div className="text-white p-[7.5rem] space-y-[1.125rem]">
               <h3 className="font-clash text-[3.125rem] leading-[3.844rem] font-medium">

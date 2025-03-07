@@ -77,7 +77,7 @@ const footerLinks: FooterLinks = [
 export default function index() {
   return (
     <div className="py-[5rem] bg-black">
-      <div className="relative">
+      <div className="relative container">
         <div className="green-morphe left-[30%] -top-[30px]"></div>
         <div className="yellow-morphe left-[60%] -top-[30px]"></div>
       </div>
@@ -88,7 +88,7 @@ export default function index() {
           <h3 className="font-clash text-[4.875rem] text-center font-medium leading-[5.996rem]">
             Ready to find the perfect care solution for your loved one?{" "}
           </h3>
-          <p>Submit your Request and let us help you make the best decision for your family.</p>
+          <p className="text-xl">Submit your Request and let us help you make the best decision for your family.</p>
           <div className="flex items-center gap-4 justify-center">
             <Button className="bg-[#B6965A] hover:bg-[#B6965A]/90 h-[60px] px-10">
               Submit a care request
@@ -106,7 +106,7 @@ export default function index() {
                   <p className="text-white font-poppins font-bold text-[1.5rem]">
                     Join our newsletter
                   </p>
-                  <p className="text-[#BFBFBF]">
+                  <p className="text-[#BFBFBF] text-[1rem] leading-[1.21rem]">
                     For expert advice, helpful resources, and the latest updates on senior care
                   </p>
                 </div>
@@ -134,9 +134,9 @@ export default function index() {
                   height={39}
                   className="bg-white rounded-full"
                 />
-                <p className="font-clash font-bold text-[1.5rem]">Internalhealth</p>
+                <p className="font-clash font-bold text-[1.5rem] leading-[1.845rem]">Internalhealth</p>
               </div>
-              <p className="text-[#BFBFBF]">
+              <p className="text-[#BFBFBF] text-[1rem] leading-[1.21rem]">
                 Your trusted resource for connecting with top-quality senior care providers
               </p>
             </div>
@@ -148,17 +148,17 @@ export default function index() {
             >
               {footerLinks.map((l1, i1) => (
                 <div key={i1} className="text-left space-y-[1.125rem] min-w-[200px]">
-                  <p className="font-bold text-white/[0.88]">{l1.title}</p>
+                  <p className="font-bold text-white/[0.88] text-[1rem] leading-[1.21rem]">{l1.title}</p>
                   <ul className="relative space-y-[1.125rem]">
                     {l1.links.map((l2, index) => (
                       <li key={index} className="relative text-left">
                         {l1.type == "links" ? (
                           l2.href ? (
-                            <Link className={cn("text-[#BFBFBF]", l2.className)} href={l2.href}>
+                            <Link className={cn("text-[#BFBFBF] text-[1rem] leading-[1.21rem]", l2.className)} href={l2.href}>
                               {l2.title}
                             </Link>
                           ) : (
-                            <p className={cn("text-[#BFBFBF]", l2.className)}>{l2.title}</p>
+                            <p className={cn("text-[#BFBFBF] text-[1rem] leading-[1.21rem]", l2.className)}>{l2.title}</p>
                           )
                         ) : l1.type == "images" ? (
                           l2.href ? (
