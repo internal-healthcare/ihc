@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-import "@repo/ui/globals.css";
+import "@/assets/globals.css";
 import { cn } from "@repo/ui/lib/utils";
 import { inter } from "./fonts";
 import MainNav from "@/components/MainNav";

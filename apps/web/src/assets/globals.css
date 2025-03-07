@@ -1,0 +1,180 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-size: 14px;
+}
+
+
+@layer base {
+  :root {
+    --brand-primary: #7A8D83;
+    --brand-primary-2: #B6965A;
+    --brand-primary-3: #85532B;
+    --brand-shade: #FFF5ED;
+    --primary-3: #F6F3ED;
+    --light: #FAFAFA;
+    --light-2: #F5F5F5;
+    --shade-1: #EFF6F2;
+
+
+
+
+
+    --background: 0 0% 100%;
+    --foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 47.4% 11.2%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 47.4% 11.2%;
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 210 40% 98%;
+    --ring: 215 20.2% 65.1%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 224 71% 4%;
+    --foreground: 213 31% 91%;
+    --muted: 223 47% 11%;
+    --muted-foreground: 215.4 16.3% 56.9%;
+    --accent: 216 34% 17%;
+    --accent-foreground: 210 40% 98%;
+    --popover: 224 71% 4%;
+    --popover-foreground: 215 20.2% 65.1%;
+    --border: 216 34% 17%;
+    --input: 216 34% 17%;
+    --card: 224 71% 4%;
+    --card-foreground: 213 31% 91%;
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 1.2%;
+    --secondary: 222.2 47.4% 11.2%;
+    --secondary-foreground: 210 40% 98%;
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+    --ring: 216 34% 17%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply antialiased font-inter;
+  }
+
+  @font-face {
+    font-family: 'ClashDisplay';
+    src: url('./fonts/ClashDisplay-Variable.woff2') format('woff2'),
+      url('./fonts/ClashDisplay-Variable.woff') format('woff'),
+      url('./fonts/ClashDisplay-Variable.ttf') format('truetype');
+    font-weight: 200 700;
+    font-display: swap;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Aeonik';
+    src: url('./fonts/Aeonik\ Pro\ Regular/Aeonik-Pro.woff2') format('woff2'),
+      url('./fonts/Aeonik\ Pro\ Regular/Aeonik-Pro.woff') format('woff'),
+      url('./fonts/Aeonik\ Pro\ Regular/Aeonik-Pro.ttf') format('truetype'),
+      url('./fonts/Aeonik\ Pro\ Regular/Aeonik-Pro-Bold.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Aeonik';
+    src: url('./fonts/Aeonik\ Pro\ Regular/Aeonik-Pro-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: bold;
+  }
+
+
+  @font-face {
+    font-family: 'Poppins';
+    src: url('./fonts/Poppins/Poppins-Bold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: bold;
+  }
+
+  @font-face {
+    font-family: 'CabinetGrotesk-Variable';
+    src: url('./fonts/CabinetGrotesk-Variable.woff2') format('woff2'),
+         url('./fonts/CabinetGrotesk-Variable.woff') format('woff'),
+         url('./fonts/CabinetGrotesk-Variable.ttf') format('truetype');
+    font-weight: 100 900;
+    font-display: swap;
+    font-style: normal;
+  }
+
+  .container {
+    @apply max-w-[1200px] mx-auto px-4;
+  }
+
+  .green-morphe {
+    /* div.HomeHeroBack_morphYellow__CT8KJ */
+    position: absolute;
+    width: 336.28px;
+    height: 336.28px;
+    left: 451px;
+    top: -15px;
+    background: #B6965A;
+    opacity: 0.27;
+    filter: blur(48.0401px);
+    border-radius: 336.281px;
+
+
+  }
+
+  .yellow-morphe {
+    /* div.HomeHeroBack_morphYellow__CT8KJ */
+    position: absolute;
+    width: 336.28px;
+    height: 336.28px;
+    left: 591px;
+    top: -15px;
+    background: #7A8D83;
+    opacity: 0.27;
+    filter: blur(48.0401px);
+    border-radius: 336.281px;
+
+  }
+
+  .img-shade {
+    /* image */
+    position: absolute;
+    width: 505px;
+    height: 727px;
+    left: 505px;
+    top: 0px;
+    background: url(/shades/img-shade.svg);
+    opacity: 0.58;
+
+  }
+}
+
+
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
