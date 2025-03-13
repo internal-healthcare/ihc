@@ -34,7 +34,16 @@ const links = [
         iconColor: "#141414",
         color: "#F5F5F5",
         description:
-          "Reach out for inquiries, support, or service information through various communication channels",
+          "Reach out for inquiries, support, or information through various communication channels.",
+      },
+      {
+        title: "Frequently Asked Questions",
+        href: "/faq",
+        icon: "/icons/qlementine-icons_faq-16.svg",
+        iconColor: "bg-brand-primary3",
+        color: "#ffffff",
+        description:
+          "Find answers to common questions about our services, policies, and processes.",
       },
     ],
   },
@@ -84,13 +93,6 @@ export default function MainNav() {
             <Image src="/images/logo.png" alt="Internal healthcare" width={45} height={45} />
             <p className="text-[1.375rem] font-bold font-clash text-[#101828]">Internal Health</p>
           </div>
-          {/* <div className="hidden lg:flex items-center gap-4 text-[#475467] font-semibold text">
-          {links.map((l, index) => (
-            <Link key={index} href={l.href}>
-              {l.title}
-            </Link>
-          ))}
-        </div> */}
           <div className="hidden lg:flex items-center gap-4 ">
             <NavigationMenuList>
               {links.map((l, index) =>
@@ -114,7 +116,9 @@ export default function MainNav() {
                                 <div
                                   className={cn(
                                     "!w-[60px] !h-[60px] flex justify-center items-center rounded-[18px]",
-                                    `bg-[${item.iconColor}]`
+                                    item.iconColor.startsWith("bg-")
+                                      ? item.iconColor
+                                      : ` bg-[${item.iconColor}]`
                                   )}
                                 >
                                   <Image
@@ -122,8 +126,8 @@ export default function MainNav() {
                                     alt={item.title}
                                     width={24}
                                     height={24}
-                                    className="filter brightness-0 invert"
-                                    style={{ width: "auto", height: "auto" }}
+                                    className="filter brightness-0 invert object-contain"
+                                    style={{ width: 24, height: 24 }}
                                   />
                                 </div>
                                 <div className="w-3/4">
@@ -147,7 +151,7 @@ export default function MainNav() {
                       <NavigationMenuLink
                         className={cn(
                           navigationMenuTriggerStyle(),
-                          "text-[#475467] font-normal focus:bg-transparent bg-transparent text-[1rem]" 
+                          "text-[#475467] font-normal focus:bg-transparent bg-transparent text-[1rem]"
                         )}
                       >
                         {l.title}
