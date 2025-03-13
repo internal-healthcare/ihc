@@ -1,9 +1,13 @@
-module.exports = (opts = {}) => {
+// eslint-disable-next-line @typescript-eslint/no-require-imports
+const postcss = require('postcss');
+
+const plugin = postcss.plugin('postcss-px-to-rem', (opts = {}) => {
   const baseFontSize = opts.baseFontSize || 16; // Default base font size is 16px
-  return {
-    postcssPlugin: "postcss-px-to-rem",
-    Declaration(decl) {
-      if (decl.value.includes("px")) {
+
+  return (root) => {
+    root.walkDecls((decl) => {
+      // Check if the value contains 'px'
+      if (decl.value.includes('px')) {
         // Replace all px values with the equivalent rem value
         decl.value = decl.value.replace(/(\d*\.?\d+)px/g, (match, p1) => {
           const pxValue = parseFloat(p1);
@@ -11,8 +15,7 @@ module.exports = (opts = {}) => {
           return `${remValue}rem`;
         });
       }
-    },
+    });
   };
-};
-
-module.exports.postcss = true;
+});
+module.exports = plugin;
