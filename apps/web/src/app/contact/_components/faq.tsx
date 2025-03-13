@@ -2,7 +2,7 @@ import CBadge from "@/components/CBadge";
 import Image from "next/image";
 import React from "react";
 
-const faqData = [
+export const faqData = [
   {
     image: "/icons/like.svg",
     title: "Is there a free trial available?",
@@ -70,7 +70,7 @@ type FaqCardProps = {
   title: string;
   description: string;
 };
-function FaqCard({ image, title, description }: FaqCardProps) {
+export function FaqCard({ image, title, description }: FaqCardProps) {
   return (
     <div className="max-w-[30.625rrem] bg-[#F5F5F5] rounded-[1.25rem] px-[2rem] py-[3.125rem] space-y-[2rem]">
       <div className="w-[3rem] h-[3rem] bg-white mx-auto rounded-lg border border-[#E4E7EC] grid items-center justify-center">
