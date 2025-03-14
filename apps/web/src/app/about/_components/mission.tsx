@@ -64,7 +64,13 @@ function MissionCard({ icon, title, description }: MissionCardProps) {
     <div className="space-y-[1rem]">
       <div className="flex items-center gap-[1.25rem]">
         <div className="h-[48px] w-[48px] bg-[#F6F3ED] rounded-full grid justify-center items-center">
-          <Image src={icon} alt={title} width={24} height={24} className="object-contain" />
+          <Image
+            src={icon}
+            alt={title}
+            width={24}
+            height={24}
+            className="object-contain w-[24px] h-[24px]"
+          />
         </div>
         <p className="text-[#101828] font-clash text-[1.75rem] font-medium">{title}</p>
       </div>
